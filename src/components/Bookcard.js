@@ -1,14 +1,13 @@
 import React from 'react';
 import Book from './Book';
 
-
 function Bookcard() {
-    const data = [
-      {
-        title: 'Atomic Habits',
-        author: 'James Clear',
-      },
-    ];
+  const data = [
+    {
+      title: 'Atomic Habits',
+      author: 'James Clear',
+    },
+  ];
   return (
     <div>
       {data.map((book) => (

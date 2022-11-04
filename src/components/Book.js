@@ -6,8 +6,8 @@ function Book(prop) {
   return (
     <div>
       <ul className={BookCSS.bookInfo}>
-      <li>{title}</li>
-      <li>{author}</li>
+        <li>{title}</li>
+        <li>{author}</li>
       </ul>
       <button type="button">Delete</button>
     </div>

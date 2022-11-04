@@ -7,7 +7,7 @@ function Addbook() {
       <form>
         <input placeholder="Book Title" required />
         <input placeholder="Author" required />
-        <button>Add Book</button>
+        <button type="button">Add Book</button>
       </form>
     </div>
   );
