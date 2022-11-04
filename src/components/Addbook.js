@@ -4,9 +4,11 @@ function Addbook() {
   return (
     <div>
       <h2>Add New Book</h2>
-      <input textarea="Book Title" required />
-      <input textarea="Author" required />
-      <button>Add Book</button>
+      <form>
+        <input placeholder="Book Title" required />
+        <input placeholder="Author" required />
+        <button>Add Book</button>
+      </form>
     </div>
   );
 }

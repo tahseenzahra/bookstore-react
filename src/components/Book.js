@@ -1,13 +1,15 @@
 import React from 'react';
 import BookCSS from '../css-modules/Book.module.css';
 
-function Book(props) {
+function Book(prop) {
+  const { title, author } = prop;
   return (
     <div>
       <ul className={BookCSS.bookInfo}>
-      <li>{props.book.title}</li>
-      <li>{props.book.author}</li>
+      <li>{title}</li>
+      <li>{author}</li>
       </ul>
+      <button type="button">Delete</button>
     </div>
   );
 }

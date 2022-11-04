@@ -15,7 +15,7 @@ function Navbar() {
         </li>
       </ul>
       <div className={NavbarCSS.oval}>
-        <div className={NavbarCSS.person-icon}></div>
+        <div className={NavbarCSS.personIcon}></div>
       </div>
     </nav>
   );
