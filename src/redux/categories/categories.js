@@ -1,7 +1,7 @@
 const Status = 'bookstore/categories/status';
 
 const initialState = {
-  categories: []
+  categories: [],
 };
 
 export function checkStatus() {
@@ -12,10 +12,9 @@ export function checkStatus() {
 
 export default function categoriesreducer(state = initialState, action = {}) {
   switch (action.type) {
-    
     case Status:
-      return "Under construction";
+      return 'Under construction';
     default:
-      return state; 
+      return state;
   }
-};
+}
