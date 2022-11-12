@@ -4,14 +4,14 @@ import Addbook from './Addbook';
 
 function Booklist() {
   return (
-    <div>
+    <section>
       <div>
         <Book />
       </div>
       <div>
         <Addbook />
       </div>
-    </div>
+    </section>
   );
 }
 
