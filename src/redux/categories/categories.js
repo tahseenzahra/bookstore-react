@@ -18,3 +18,5 @@ export const checkStatus = () => ({
   type: Status,
   text: 'Under construction',
 });
+
+export default categoriesReducer;
