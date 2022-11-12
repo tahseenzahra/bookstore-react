@@ -10,9 +10,6 @@ class App extends React.PureComponent {
   render() {
     return (
       <div>
-        {/* <Provider store={store}>
-          
-        </Provider> */}
         <BrowserRouter>
           <Navbar />
           <Routes>
