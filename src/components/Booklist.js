@@ -1,12 +1,12 @@
 import React from 'react';
-import Bookcard from './Bookcard';
+import Book from './Book';
 import Addbook from './Addbook';
 
-function Books() {
+function Booklist() {
   return (
     <div>
       <div>
-        <Bookcard />
+        <Book />
       </div>
       <div>
         <Addbook />
@@ -15,4 +15,4 @@ function Books() {
   );
 }
 
-export default Books;
+export default Booklist;

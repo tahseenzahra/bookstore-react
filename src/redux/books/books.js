@@ -1,37 +1,42 @@
+import { v4 as uuidv4 } from 'uuid';
 const AddBook = 'bookstore/books/addbook';
 const RemoveBook = 'bookstore/books/removebook';
 
-const bookReducer = (state = [], action) => {
+const initialState = [
+  {
+    title: 'Atomic Habits',
+    author: 'James Clear',
+    id: uuidv4(),
+  },
+  {
+    title: 'Think and Grow Rich',
+    author: 'Nepolean Hill',
+    id: uuidv4(),
+  },
+];
+
+export function addbook(book) {
+  return {
+    type: AddBook,
+    payload: book,
+  };
+}
+export function removebook(id) {
+  return {
+    type: RemoveBook,
+    payload: id,
+  };
+}
+
+export default function bookreducer(state = initialState, action) {
   switch (action.type) {
     case AddBook:
-      return [
-        ...state,
-        {
-          id: action.id,
-          title: action.title,
-          author: action.author,
-        },
-      ];
+      return state.concat(action.payload);
     case RemoveBook:
-      return [
-        ...state
-          .filter((book) => (book.id !== book)),
-      ];
+      return {
+        ...state.filter((book) => book.id !== action.payload),
+      };
     default:
       return state;
   }
-};
-
-export const addbook = (id, title, author) => ({
-  type: AddBook,
-  id,
-  title,
-  author,
-});
-
-export const removebook = (id) => ({
-  type: RemoveBook,
-  id,
-});
-
-export default bookReducer;
+}
