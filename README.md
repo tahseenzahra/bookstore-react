@@ -30,6 +30,9 @@ It is single page application for using mathimatical functions and displaying qu
 
 Fork / Clone the repository to use it on your local system.
 
+to get projects dependencies run 
+$ npm i -S uuid 
+
 ## Usage
 
 View the file through the source code.
