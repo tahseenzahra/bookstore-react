@@ -1,19 +1,24 @@
+/*eslint-disable*/
 import React from 'react';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import Books from './components/Books';
+// import { Provider } from 'react-redux';
+import Booklist from './components/Booklist';
 import Navbar from './components/Navbar';
 import Categories from './components/Categories';
 
-function App() {
-  return (
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Books />} />
-        <Route exact path="/Categories" element={<Categories />} />
-      </Routes>
-    </BrowserRouter>
-  );
+class App extends React.PureComponent {
+  render() {
+    return (
+      <div>
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Booklist />} />
+            <Route exact path="/Categories" element={<Categories />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+    );
+  }
 }
-
 export default App;
