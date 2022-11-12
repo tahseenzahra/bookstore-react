@@ -16,22 +16,22 @@ const bookReducer = (state = [], action) => {
       return [
         ...state
           .filter((book) => (book.id !== book)),
-];
-default:
-  return state;
-}
+      ];
+    default:
+      return state;
+  }
 };
 
 export const addbook = (id, title, author) => ({
-type: AddBook,
-id,
-title,
-author,
+  type: AddBook,
+  id,
+  title,
+  author,
 });
 
 export const removebook = (id) => ({
-type: RemoveBook,
-id,
+  type: RemoveBook,
+  id,
 });
 
 export default bookReducer;
