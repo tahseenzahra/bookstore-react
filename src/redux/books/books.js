@@ -1,21 +1,4 @@
-// import { v4 as uuidv4 } from 'uuid';
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-
-// const AddBook = 'bookstore/books/addbook';
-// const RemoveBook = 'bookstore/books/removebook';
-
-// const initialState = [
-//   {
-//     title: 'Atomic Habits',
-//     author: 'James Clear',
-//     id: uuidv4(),
-//   },
-//   {
-//     title: 'Think and Grow Rich',
-//     author: 'Nepolean Hill',
-//     id: uuidv4(),
-//   },
-// ];
 
 const apiUrl = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/r7k1xDRDaSi4D5ImRVRb/books/';
 
@@ -51,12 +34,6 @@ export const addbook = createAsyncThunk('books/addbook', async (payload, thunkAP
   return books;
 });
 
-// export function removebook(id) {
-//   return {
-//     type: RemoveBook,
-//     payload: id,
-//   };
-// }
 export const removebook = createAsyncThunk('books/removebook', async (payload, thunkAPI) => {
   await fetch(`${apiUrl}${payload}`, {
     method: 'DELETE',

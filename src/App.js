@@ -7,9 +7,8 @@ import Booklist from './components/Booklist';
 import Navbar from './components/Navbar';
 import Categories from './components/Categories';
 
-class App extends React.PureComponent {
-  render() {
-    const dispatch = useDispatch();
+function App(){
+  const dispatch = useDispatch();
     useEffect(() => {
       dispatch(getBook());// eslint-disable-next-line
     }, []);
@@ -22,6 +21,5 @@ class App extends React.PureComponent {
         </Routes>
       </div>
     );
-  }
 }
 export default App;
