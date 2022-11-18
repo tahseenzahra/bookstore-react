@@ -4,9 +4,11 @@ import { checkStatus } from '../redux/categories/categories';
 
 export default function Categories() {
   const status = useSelector((state) => state.categories);
+  const setChecked = React.useState(false);
   const dispatch = useDispatch();
   const checkHandler = () => {
     dispatch(checkStatus());
+    setChecked(true);
   };
   return (
     <div>
