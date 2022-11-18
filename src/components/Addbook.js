@@ -21,19 +21,7 @@ function Addbook() {
       author: '',
       category: '',
     });
-    // dispatch(
-    //   addbook({
-    //     id: uuidv4(),
-    //     title,
-    //     author,
-    //   }),
-    // );
-    // setTitle('');
-    // setAuthor('');
   };
-
-  // const titleHandler = (e) => {
-  // setTitle(e.target.value);
   const inputHandler = (e) => {
     const {
       name, value, type, checked,
@@ -44,14 +32,10 @@ function Addbook() {
     }));
   };
 
-  // const authorHandler = (e) => {
-  //   setAuthor(e.target.value);
-  // };
   return (
     <div>
       <h2>Add New Book</h2>
       <form onSubmit={formHandler}>
-        {/* <input placeholder="Book Title" value={title} onChange={titleHandler} required /> */}
         <input
           type="text"
           placeholder="Book title"
@@ -66,7 +50,6 @@ function Addbook() {
           name="author"
           onChange={inputHandler}
         />
-        {/* <input placeholder="Author" value={author} onChange={authorHandler} required /> */}
         <button type="submit">Add Book</button>
       </form>
     </div>
