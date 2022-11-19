@@ -4,16 +4,18 @@ import NavbarCSS from '../css-modules/Navbar.module.css';
 
 function Navbar() {
   return (
-    <nav className={NavbarCSS.flex}>
+    <nav className={NavbarCSS.container}>
       <div className={NavbarCSS.logo}>Bookstore CMS</div>
-      <ul className={NavbarCSS.navlist}>
-        <li>
+      <Link className={NavbarCSS.navLink} to="/">Books</Link>
+      <Link className={NavbarCSS.navLink} to="/categories">Categories</Link>
+      {/* <ul className={NavbarCSS.navList}>
+        <li className={NavbarCSS.listItem}>
           <Link className={NavbarCSS.navLink} to="/">Books</Link>
         </li>
-        <li>
+        <li className={NavbarCSS.listItem}>
           <Link className={NavbarCSS.navLink} to="/categories">Categories</Link>
         </li>
-      </ul>
+      </ul> */}
       <div className={NavbarCSS.oval}>
         <div className={NavbarCSS.personIcon} />
       </div>
