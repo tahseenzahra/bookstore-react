@@ -45,16 +45,6 @@ export default function Book() {
           </div>
         ))}
       </div>
-      {/* {books.map((book) => (
-        <div className={BookCSS.bookinfo} key={book.id}>
-          <p>{book.category}</p>
-          <p>{book.title}</p>
-          <p>{book.author}</p>
-          <button type="button" onClick={() => deleteHandler(book.id)}>
-            Delete
-          </button>
-        </div>
-      ))} */}
     </>
   );
 }
