@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+}
+
+.AddbookContainer {
+  margin: 0.938rem 6.25rem;
+}
+
+.caption {
+  margin: 1.8rem 0;
+  height: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.input-text,
+.Btn,
+select {
+  height: 3rem;
+  margin: 12px 0;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.input-text,
+select {
+  width: 300px;
+  border: solid 1px #e8e8e8;
+  padding: 0.375rem 0.938rem 0.563rem 1rem;
+}
+
+.input-text {
+  border: solid 1px #e8e8e8;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.Btn {
+  padding: 0.801rem;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #396df2;
+  border: 1px solid #396df2;
+  cursor: pointer;
+  width: 300px;
+  height: 2.813rem;
+}
+
+.Btn:hover {
+  color: white;
+  background-color: #396df2;
+}
