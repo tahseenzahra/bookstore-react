@@ -10,7 +10,11 @@ function Navbar() {
         <div className={NavbarCSS.logo}>Bookstore CMS</div>
         <Link className={NavbarCSS.navLink} to="/">Books</Link>
         <Link className={NavbarCSS.navLink} to="/categories">Categories</Link>
-        <span className="material-symbols-rounded user-icon" />
+        <div className="avatar">
+          <div className="user-icon">
+            <span />
+          </div>
+        </div>
       </nav>
     </header>
   );
