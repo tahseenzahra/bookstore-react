@@ -34,11 +34,11 @@ function Addbook() {
   };
 
   return (
-    <div className="container">
+    <div className="AddbookContainer">
       <h2 className="caption">Add New Book</h2>
       <form className="form" onSubmit={formHandler}>
         <input
-          className="input-text title"
+          className="input-text"
           type="text"
           placeholder="Book title"
           value={bookData.title}
@@ -47,7 +47,7 @@ function Addbook() {
           onChange={inputHandler}
         />
         <input
-          className="input-text author"
+          className="input-text"
           type="text"
           placeholder="Book author"
           value={bookData.author}
@@ -55,7 +55,16 @@ function Addbook() {
           required
           onChange={inputHandler}
         />
-        <button className="addBtn" type="submit">Add Book</button>
+        <select name="category" id="category" onChange={inputHandler}>
+          <option value="">Categories</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Action">Action</option>
+          <option value="Horror">Horror</option>
+          <option value="Fantasy">Fantasy</option>
+          <option value="Sci-Fi">Sci-Fi</option>
+          <option value="Comic Book">Comic Book</option>
+        </select>
+        <button className="Btn" type="submit">Add Book</button>
       </form>
     </div>
   );

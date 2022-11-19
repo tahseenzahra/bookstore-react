@@ -5,13 +5,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
 }
 
-.container {
-  padding: 0 30px;
+.AddbookContainer {
+  margin: 0.938rem 6.25rem;
 }
+
 .caption {
-  /* width: 10.875rem; */
+  margin: 1.8rem 0;
   height: 1.5rem;
   font-size: 1.25rem;
   font-weight: bold;
@@ -24,26 +28,24 @@
 
 .form {
   display: flex;
+  justify-content: space-between;
   gap: 10px;
-  width: 100%;
-  height: 100%;
 }
 
 .input-text,
-.addBtn {
-  height: 2rem;
+.Btn,
+select {
+  height: 3rem;
   margin: 12px 0;
-  /* padding: 12px; */
   border-radius: 4px;
   background-color: #fff;
 }
 
-.title {
-  /* width: 50%; */
-}
-
-.author {
-  /* width: 30%; */
+.input-text,
+select {
+  width: 300px;
+  border: solid 1px #e8e8e8;
+  padding: 0.375rem 0.938rem 0.563rem 1rem;
 }
 
 .input-text {
@@ -52,17 +54,19 @@
   font-size: 14px;
 }
 
-.addBtn {
+.Btn {
+  padding: 0.801rem;
+  border-radius: 4px;
   font-weight: 500;
   font-size: 14px;
-  /* width: 20%; */
-  /* height: 58px; */
   color: #396df2;
   border: 1px solid #396df2;
   cursor: pointer;
+  width: 300px;
+  height: 2.813rem;
 }
 
-.addBtn:hover {
+.Btn:hover {
   color: white;
   background-color: #396df2;
 }

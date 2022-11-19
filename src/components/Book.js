@@ -11,7 +11,7 @@ export default function Book() {
   };
   return (
     <>
-      <div className="container">
+      <div className="bookContainer">
         {books.map((book) => (
           <div className="book-item" key={book.id}>
             <div className="book-left">
@@ -32,13 +32,13 @@ export default function Book() {
               <div className="circle-container">
                 <div className="circle" />
                 <div className="circle-text">
-                  <span className="percentage">75%</span>
+                  <span className="percentage">60%</span>
                   <span className="completed-text">Completed</span>
                 </div>
               </div>
               <div className="chapter-container">
                 <p className="current-chapter">CURRENT CHAPTER</p>
-                <p className="chapter-no">Chapter 17</p>
+                <p className="chapter-no">Chapter 5</p>
                 <button type="button" className="addBtn">UPDATE PROGRESS</button>
               </div>
             </div>
