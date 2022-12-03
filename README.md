@@ -1,5 +1,5 @@
 # bookstore-react
-It is single page application for using mathimatical functions and displaying quotations related to it, it's designed with react.
+To have the list of books along with the tracking history of their status. 
 
 ## Built With
 
